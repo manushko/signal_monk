@@ -1,0 +1,8 @@
+<!doctype html>
+<title>The Signal Monk</title>
+{% for feed in feeds %}
+  <h2>{{ feed.feed.title }}</h2>
+  {% for entry in feed.entries[:10] %}
+    <p><strong>{{ entry.published }}</strong>: <a href={{ entry.link }}>{{ entry.title }}</a></p>
+  {% endfor %}
+{% endfor %}
