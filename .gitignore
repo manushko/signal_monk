@@ -128,5 +128,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# IDEA
+.idea
+
 # project specific files
 feeds.txt
